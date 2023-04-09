@@ -1,0 +1,44 @@
+body{
+  background-color: rgb(48, 47, 47);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.box{
+  width: 500px;
+  height: 300px;
+  border: 1px solid cyan;
+  margin-top: 50px;
+  text-align: center;
+}
+h1{
+  color: yellow;
+}
+.list{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 21px;
+  /* margin-bottom: 2px; */
+}
+.qty{
+  color: cyan;
+  display: flex;
+  align-items: center;
+}
+.qty p{
+  margin: 10px 10px;
+  height: 21px;
+  width: 21px;
+  background-color: cyan;
+  color: black;
+  line-height: 18px;
+  cursor: pointer;
+}
+h3{
+  color: cyan;
+}
+h3 span{
+  font-size: 12px;
+  margin-left: 12px;
+  color: cornflowerblue;
+}
