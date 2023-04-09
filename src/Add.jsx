@@ -19,6 +19,7 @@ function Add(props) {
       setfirst(count * props.price)
     } else {
       setcount((count = 0));
+      setfirst('')
     }
   };
   return (
