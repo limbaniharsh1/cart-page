@@ -1,17 +1,22 @@
 import React, { useState } from "react";
-import App from "./App.css";
+// import App from "./App.css";
 // import App from "./App.jsx";
 
 function Add(props) {
   let [count, setcount] = useState(0);
   let [totle, settotle] = useState(0);
+  let [first, setfirst] = useState();
   let incre = () => {
-    setcount(count + 1);
+    setcount(++count);
     settotle(totle);
+    setfirst(count * props.price)
   };
+  console.log(count)
+  console.log(first)
   let decre = () => {
     if (count > 1) {
-      setcount(count - 1);
+      setcount(--count);
+      setfirst(count * props.price)
     } else {
       setcount((count = 0));
     }
@@ -34,6 +39,7 @@ function Add(props) {
           )}
           <h6>{count}</h6>
           <p onClick={() => incre()}>+</p>
+          <h6>{first}</h6>
         </div>
       </div>
     </div>
